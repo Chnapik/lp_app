@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -8,27 +10,15 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Li+ion Power'),
-        backgroundColor: Colors.grey,
+        backgroundColor: Colors.blueGrey,
         actions: const [
           PopupMenuItem(
             child: Text('Settings'),
           ),
         ],
       ),
-      body: SafeArea(
-        child: Expanded(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: const <Widget>[
-              Text('Total Battery Degradation Reduced'),
-              SizedBox(height: 10.0),
-              Text('Battery Health Metric'),
-              SizedBox(height: 10.0),
-              Text('Devices | Battery | Home'),
-            ],
-          ),
-        ),
+      body: const Center(
+        child: Text('Homepage'),
       ),
     );
   }
