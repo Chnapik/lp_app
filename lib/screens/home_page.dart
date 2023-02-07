@@ -1,4 +1,8 @@
 import 'package:flutter/material.dart';
+import 'package:lp_app/screens/home_page.dart';
+import 'package:lp_app/screens/devices_page.dart';
+import 'package:lp_app/screens/ble1_page.dart';
+import 'package:lp_app/screens/settings_page.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -16,6 +20,13 @@ class _HomePageState extends State<HomePage> {
     });
   }
 
+  final List<Widget> screens = [
+    const DevicesPage(),
+    const Ble1Page(),
+    const SettingsPage(),
+    const HomePage(),
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,9 +39,7 @@ class _HomePageState extends State<HomePage> {
           ),
         ],
       ),
-      body: const Center(
-        child: Text('Homepage'),
-      ),
+      body: screens[_selectedIndex],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _selectedIndex,
         items: const [
