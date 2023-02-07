@@ -52,8 +52,8 @@ class _HomePageState extends State<HomePage> {
             label: 'Battery',
           ),
           BottomNavigationBarItem(
-            icon: Icon(Icons.settings),
-            label: 'Settings',
+            icon: Icon(Icons.home),
+            label: 'Home',
           ),
         ],
         backgroundColor: Colors.blueGrey,
