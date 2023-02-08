@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lp_app/screens/devices_page.dart';
+import 'package:lp_app/screens/main_route.dart';
 
 void main() {
   runApp(const MyApp());

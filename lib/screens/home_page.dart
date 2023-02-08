@@ -1,3 +1,5 @@
+import 'dart:ui';
+
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -15,7 +17,10 @@ class _HomePageState extends State<HomePage> {
         mainAxisAlignment: MainAxisAlignment.center,
         children: const [
           Center(
-            child: Text('Home Page'),
+            child: Text(
+              'Home Page',
+              style: TextStyle(fontSize: 40.0),
+            ),
           )
         ],
       ),

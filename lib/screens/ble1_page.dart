@@ -5,9 +5,12 @@ class Ble1Page extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: const Center(
-        child: Text('BLE1 Page'),
+    return const Scaffold(
+      body: Center(
+        child: Text(
+          'BLE1 Page',
+          style: TextStyle(fontSize: 40.0),
+        ),
       ),
     );
   }
