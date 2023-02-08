@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'ble1_page.dart';
+import 'devices_page.dart';
 import 'home_page.dart';
 
 class MainRoute extends StatefulWidget {
@@ -46,19 +47,6 @@ class _MainRouteState extends State<MainRoute> {
         selectedItemColor: Colors.orangeAccent,
         unselectedItemColor: Colors.white,
         onTap: _onPageChanged,
-      ),
-    );
-  }
-}
-
-class DevicesPage extends StatelessWidget {
-  const DevicesPage({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      body: const Center(
-        child: Text('Devices Page'),
       ),
     );
   }
