@@ -18,9 +18,11 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(
           title: const Text('Li+ion Power'),
-          actions: const [
-            PopupMenuItem(
-              child: Text('Settings'),
+          actions: [
+            IconButton(
+              icon: Icon(Icons.settings),
+              onPressed: () {},
+              color: Colors.white,
             ),
           ],
         ),
