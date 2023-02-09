@@ -1,13 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:lp_app/screens/main_route.dart';
+import 'package:lp_app/screens/settings_page.dart';
 
 void main() {
   runApp(const MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({super.key});
 
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -19,11 +25,17 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: const Text('Li+ion Power'),
           actions: [
-            IconButton(
-              icon: Icon(Icons.settings),
-              onPressed: () {},
-              color: Colors.white,
-            ),
+            Builder(builder: (context) {
+              return IconButton(
+                icon: Icon(Icons.settings),
+                color: Colors.white,
+                onPressed: () {
+                  print('onPressed has been called');
+                  Navigator.of(context).push(
+                      MaterialPageRoute(builder: (context) => SettingsPage()));
+                },
+              );
+            }),
           ],
         ),
         body: const MainRoute(),
