@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lp_app/screens/settings_page.dart';
 
 import 'ble1_page.dart';
 import 'devices_page.dart';
@@ -20,6 +21,7 @@ class _MainRouteState extends State<MainRoute> {
     const DevicesPage(),
     const Ble1Page(),
     const HomePage(),
+    const SettingsPage(),
   ];
 
   @override
