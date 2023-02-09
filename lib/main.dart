@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lp_app/screens/login_page.dart';
 import 'package:lp_app/screens/main_route.dart';
 import 'package:lp_app/screens/settings_page.dart';
 
@@ -38,7 +39,7 @@ class _MyAppState extends State<MyApp> {
             }),
           ],
         ),
-        body: const MainRoute(),
+        body: const LoginPage(),
       ),
     );
   }
