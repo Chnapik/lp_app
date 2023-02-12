@@ -7,6 +7,7 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
   @override
   Widget build(BuildContext context) {
     return AppBar(
+      automaticallyImplyLeading: false,
       title: const Text('Li+ion Power'),
       actions: [
         Builder(builder: (context) {
