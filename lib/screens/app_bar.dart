@@ -1,15 +1,26 @@
 import 'package:flutter/material.dart';
+import 'package:lp_app/screens/settings_page.dart';
 
-class AppBar extends StatefulWidget {
-  const AppBar({super.key});
+class MyAppBar extends StatelessWidget {
+  const MyAppBar({Key? key}) : super(key: key);
 
-  @override
-  State<AppBar> createState() => _AppBarState();
-}
-
-class _AppBarState extends State<AppBar> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold();
+    return AppBar(
+      title: const Text('Li+ion Power'),
+      actions: [
+        Builder(builder: (context) {
+          return IconButton(
+            icon: Icon(Icons.settings),
+            color: Colors.white,
+            onPressed: () {
+              print('onPressed has been called');
+              Navigator.of(context).push(
+                  MaterialPageRoute(builder: (context) => SettingsPage()));
+            },
+          );
+        }),
+      ],
+    );
   }
 }
