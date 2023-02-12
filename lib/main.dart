@@ -22,24 +22,8 @@ class _MyAppState extends State<MyApp> {
       theme: ThemeData(
         primarySwatch: Colors.blueGrey,
       ),
-      home: Scaffold(
-        // appBar: AppBar(
-        //   title: const Text('Li+ion Power'),
-        //   actions: [
-        //     Builder(builder: (context) {
-        //       return IconButton(
-        //         icon: Icon(Icons.settings),
-        //         color: Colors.white,
-        //         onPressed: () {
-        //           print('onPressed has been called');
-        //           Navigator.of(context).push(
-        //               MaterialPageRoute(builder: (context) => SettingsPage()));
-        //         },
-        //       );
-        //     }),
-        //   ],
-        // ),
-        body: const LoginPage(),
+      home: const Scaffold(
+        body: LoginPage(),
       ),
     );
   }
