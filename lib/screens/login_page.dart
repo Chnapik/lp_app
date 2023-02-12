@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lp_app/screens/app_bar.dart';
 
 import 'main_route.dart';
 
@@ -8,6 +9,7 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: MyAppBar(),
       body: SafeArea(
         child: Center(
           child: SingleChildScrollView(
