@@ -12,7 +12,7 @@ class MainRoute extends StatefulWidget {
 }
 
 class _MainRouteState extends State<MainRoute> {
-  int _selectedPageIndex = 1;
+  int _selectedPageIndex = 0;
 
   void _onPageChanged(int index) => setState(() => _selectedPageIndex = index);
 
