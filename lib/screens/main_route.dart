@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:lp_app/screens/battery_page.dart';
 import 'package:lp_app/screens/settings_page.dart';
-
-import 'ble1_page.dart';
 import 'devices_page.dart';
 import 'home_page.dart';
 
@@ -13,15 +12,14 @@ class MainRoute extends StatefulWidget {
 }
 
 class _MainRouteState extends State<MainRoute> {
-  int _selectedPageIndex = 1;
+  int _selectedPageIndex = 0;
 
   void _onPageChanged(int index) => setState(() => _selectedPageIndex = index);
 
   final List<Widget> screens = [
     const DevicesPage(),
-    const Ble1Page(),
+    const BatteryPage(),
     const HomePage(),
-    const SettingsPage(),
   ];
 
   @override
