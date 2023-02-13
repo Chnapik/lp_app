@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 import 'package:flutter/material.dart';
 import 'package:lp_app/screens/app_bar.dart';
 
@@ -9,7 +7,7 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: MyAppBar(),
+      appBar: MyAppBar(appBarTitle: 'Home'),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: const [

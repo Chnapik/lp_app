@@ -6,9 +6,9 @@ class DevicesPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      appBar: MyAppBar(),
-      body: Center(
+    return Scaffold(
+      appBar: MyAppBar(appBarTitle: 'Devices'),
+      body: const Center(
         child: Text(
           'Devices Page',
           style: TextStyle(fontSize: 40.0),

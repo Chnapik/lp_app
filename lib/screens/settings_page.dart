@@ -6,9 +6,9 @@ class SettingsPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      appBar: MyAppBar(),
-      body: Center(
+    return Scaffold(
+      appBar: MyAppBar(appBarTitle: 'Settings'),
+      body: const Center(
         child: Text(
           'Settings Page',
           style: TextStyle(fontSize: 40.0),
