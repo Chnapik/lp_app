@@ -7,7 +7,10 @@ class BatteryPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: MyAppBar(appBarTitle: 'Battery'),
+      appBar: MyAppBar(
+        appBarTitle: 'Battery',
+        showLeading: false,
+      ),
       body: const Center(
         child: Text(
           'Battery Page',

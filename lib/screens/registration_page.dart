@@ -8,7 +8,10 @@ class RegistrationPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: MyAppBar(appBarTitle: 'Register'),
+      appBar: MyAppBar(
+        appBarTitle: 'Register',
+        showLeading: false,
+      ),
       body: SafeArea(
         child: Center(
           child: SingleChildScrollView(

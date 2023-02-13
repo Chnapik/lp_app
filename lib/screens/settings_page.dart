@@ -7,7 +7,7 @@ class SettingsPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: MyAppBar(appBarTitle: 'Settings'),
+      appBar: MyAppBar(appBarTitle: 'Settings', showLeading: true),
       body: const Center(
         child: Text(
           'Settings Page',
