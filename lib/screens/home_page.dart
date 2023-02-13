@@ -7,7 +7,10 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: MyAppBar(appBarTitle: 'Home'),
+      appBar: MyAppBar(
+        appBarTitle: 'Home',
+        showLeading: false,
+      ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: const [
