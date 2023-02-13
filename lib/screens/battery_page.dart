@@ -10,7 +10,7 @@ class BatteryPage extends StatelessWidget {
       appBar: MyAppBar(),
       body: Center(
         child: Text(
-          'BLE1 Page',
+          'Battery Page',
           style: TextStyle(fontSize: 40.0),
         ),
       ),
