@@ -15,7 +15,6 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
             icon: Icon(Icons.settings),
             color: Colors.white,
             onPressed: () {
-              print('onPressed has been called');
               Navigator.of(context).push(
                   MaterialPageRoute(builder: (context) => SettingsPage()));
             },
@@ -26,6 +25,5 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
   }
 
   @override
-  // TODO: implement preferredSize
   Size get preferredSize => const Size.fromHeight(kToolbarHeight);
 }
