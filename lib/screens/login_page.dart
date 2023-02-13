@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lp_app/screens/app_bar.dart';
+import 'package:lp_app/screens/registration_page.dart';
 
 import 'main_route.dart';
 
@@ -9,7 +10,7 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: MyAppBar(appBarTitle: 'Login'),
+      appBar: MyAppBar(appBarTitle: 'Register'),
       body: SafeArea(
         child: Center(
           child: SingleChildScrollView(
@@ -58,12 +59,24 @@ class LoginPage extends StatelessWidget {
                   height: 50.0,
                 ),
                 Builder(builder: (context) {
-                  return ElevatedButton(
-                    onPressed: () {
-                      Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => const MainRoute()));
-                    },
-                    child: const Text('Login'),
+                  return Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                    children: [
+                      ElevatedButton(
+                        onPressed: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: (context) => const MainRoute()));
+                        },
+                        child: const Text('Login'),
+                      ),
+                      ElevatedButton(
+                        onPressed: () {
+                          Navigator.of(context).push(MaterialPageRoute(
+                              builder: (context) => const RegistrationPage()));
+                        },
+                        child: const Text('Register'),
+                      ),
+                    ],
                   );
                 }),
               ],
