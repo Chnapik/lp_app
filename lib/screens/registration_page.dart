@@ -36,7 +36,7 @@ class RegistrationPage extends StatelessWidget {
                   padding: const EdgeInsets.all(8.0),
                   child: TextFormField(
                     decoration: const InputDecoration(
-                      hintText: 'Username',
+                      hintText: 'name',
                       border: OutlineInputBorder(),
                     ),
                   ),
@@ -48,7 +48,19 @@ class RegistrationPage extends StatelessWidget {
                   padding: const EdgeInsets.all(8.0),
                   child: TextFormField(
                     decoration: const InputDecoration(
-                      hintText: 'Password',
+                      hintText: 'email',
+                      border: OutlineInputBorder(),
+                    ),
+                  ),
+                ),
+                const SizedBox(
+                  height: 20.0,
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: TextFormField(
+                    decoration: const InputDecoration(
+                      hintText: 'password',
                       border: OutlineInputBorder(),
                     ),
                   ),
