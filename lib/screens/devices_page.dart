@@ -46,11 +46,9 @@ class DevicesPage extends StatelessWidget {
                 },
               ),
               InkWell(
-                child: Container(
-                  child: const Text(
-                    'Add Device',
-                    style: TextStyle(fontSize: 30.0),
-                  ),
+                child: const Text(
+                  'Add Device',
+                  style: TextStyle(fontSize: 30.0),
                 ),
                 onTap: () {},
               ),
