@@ -56,13 +56,6 @@ class DevicesPage extends StatelessWidget {
           );
         }),
       ),
-
-      // body: const Center(
-      //   child: Text(
-      //     'Devices Page',
-      //     style: TextStyle(fontSize: 40.0),
-      //   ),
-      // ),
     );
   }
 }
