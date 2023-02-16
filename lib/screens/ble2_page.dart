@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:lp_app/screens/app_bar.dart';
 
-class Ble1Page extends StatelessWidget {
-  const Ble1Page({super.key});
+class Ble2Page extends StatelessWidget {
+  const Ble2Page({super.key});
 
   @override
   Widget build(BuildContext context) {
