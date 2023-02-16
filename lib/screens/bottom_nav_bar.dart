@@ -1,17 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:lp_app/screens/battery_page.dart';
-import 'package:lp_app/screens/settings_page.dart';
 import 'devices_page.dart';
 import 'home_page.dart';
 
-class MainRoute extends StatefulWidget {
-  const MainRoute({super.key});
+class BottomNavBar extends StatefulWidget {
+  const BottomNavBar({super.key});
 
   @override
-  State<MainRoute> createState() => _MainRouteState();
+  State<BottomNavBar> createState() => _MainRouteState();
 }
 
-class _MainRouteState extends State<MainRoute> {
+class _MainRouteState extends State<BottomNavBar> {
   int _selectedPageIndex = 2;
 
   void _onPageChanged(int index) => setState(() => _selectedPageIndex = index);

@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lp_app/screens/app_bar.dart';
 import 'package:lp_app/screens/registration_page.dart';
-
-import 'main_route.dart';
+import 'package:lp_app/screens/bottom_nav_bar.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});
@@ -11,7 +10,7 @@ class LoginPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: MyAppBar(
-        appBarTitle: 'Register',
+        appBarTitle: 'Login',
         showLeading: false,
       ),
       body: SafeArea(
@@ -68,7 +67,7 @@ class LoginPage extends StatelessWidget {
                       ElevatedButton(
                         onPressed: () {
                           Navigator.of(context).push(MaterialPageRoute(
-                              builder: (context) => const MainRoute()));
+                              builder: (context) => const BottomNavBar()));
                         },
                         child: const Text('Login'),
                       ),

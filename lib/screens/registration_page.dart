@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lp_app/screens/app_bar.dart';
-import 'package:lp_app/screens/main_route.dart';
+import 'package:lp_app/screens/bottom_nav_bar.dart';
 
 class RegistrationPage extends StatelessWidget {
   const RegistrationPage({super.key});
@@ -75,7 +75,7 @@ class RegistrationPage extends StatelessWidget {
                   return ElevatedButton(
                     onPressed: () {
                       Navigator.of(context).push(MaterialPageRoute(
-                          builder: (context) => const MainRoute()));
+                          builder: (context) => const BottomNavBar()));
                     },
                     child: const Text('Login'),
                   );

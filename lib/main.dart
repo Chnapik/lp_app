@@ -3,6 +3,7 @@ import 'package:go_router/go_router.dart';
 import 'package:lp_app/screens/battery_page.dart';
 import 'package:lp_app/screens/ble1_page.dart';
 import 'package:lp_app/screens/ble2_page.dart';
+import 'package:lp_app/screens/bottom_nav_bar.dart';
 import 'package:lp_app/screens/devices_page.dart';
 import 'package:lp_app/screens/home_page.dart';
 import 'package:lp_app/screens/login_page.dart';
@@ -34,8 +35,12 @@ class _MyAppState extends State<MyApp> {
 }
 
 final _router = GoRouter(
-  initialLocation: '/home',
+  initialLocation: '/bottomnavbar',
   routes: [
+    GoRoute(
+      path: '/bottomnavbar',
+      builder: (context, state) => const BottomNavBar(),
+    ),
     GoRoute(
       path: '/home',
       builder: (context, state) => const HomePage(),
