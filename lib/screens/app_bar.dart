@@ -15,7 +15,7 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
       actions: [
         Builder(builder: (context) {
           return IconButton(
-            icon: const Icon(Icons.settings),
+            icon: const Icon(Icons.more_vert),
             color: Colors.white,
             onPressed: () {
               Navigator.of(context).push(MaterialPageRoute(
