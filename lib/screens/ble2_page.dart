@@ -8,7 +8,7 @@ class Ble2Page extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: MyAppBar(
-        appBarTitle: 'Battery',
+        appBarTitle: 'BLE2',
         showLeading: true,
       ),
       body: const Center(
