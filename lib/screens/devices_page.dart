@@ -10,7 +10,6 @@ class DevicesPage extends StatelessWidget {
     return Scaffold(
       appBar: MyAppBar(
         appBarTitle: 'Devices',
-        showLeading: false,
       ),
       body: Center(
         child: Builder(builder: (context) {

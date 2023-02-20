@@ -9,7 +9,6 @@ class BatteryPage extends StatelessWidget {
     return Scaffold(
       appBar: MyAppBar(
         appBarTitle: 'Battery',
-        showLeading: true,
       ),
       body: const Center(
         child: Text(

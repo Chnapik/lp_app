@@ -9,7 +9,6 @@ class Ble1Page extends StatelessWidget {
     return Scaffold(
       appBar: MyAppBar(
         appBarTitle: 'BLE1',
-        showLeading: true,
       ),
       body: const Center(
         child: Text(

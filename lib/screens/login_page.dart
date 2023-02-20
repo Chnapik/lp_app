@@ -11,7 +11,6 @@ class LoginPage extends StatelessWidget {
     return Scaffold(
       appBar: MyAppBar(
         appBarTitle: 'Login',
-        showLeading: false,
       ),
       body: SafeArea(
         child: Center(

@@ -10,7 +10,6 @@ class RegistrationPage extends StatelessWidget {
     return Scaffold(
       appBar: MyAppBar(
         appBarTitle: 'Register',
-        showLeading: false,
       ),
       body: SafeArea(
         child: Center(

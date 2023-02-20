@@ -10,7 +10,6 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: MyAppBar(
         appBarTitle: 'Home',
-        showLeading: false,
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,

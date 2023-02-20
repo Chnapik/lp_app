@@ -9,7 +9,6 @@ class SettingsPage extends StatelessWidget {
     return Scaffold(
       appBar: MyAppBar(
         appBarTitle: 'Settings',
-        showLeading: true,
       ),
       body: const Center(
         child: Text(
