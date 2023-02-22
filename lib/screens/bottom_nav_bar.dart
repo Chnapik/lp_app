@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lp_app/screens/add_device.dart';
 import 'package:lp_app/screens/battery_health_page.dart';
 import 'package:lp_app/screens/ble1_page.dart';
 import 'package:lp_app/screens/ble2_page.dart';
@@ -25,6 +26,7 @@ class _MainRouteState extends State<BottomNavBar> {
     const SettingsPage(),
     const Ble1Page(),
     const Ble2Page(),
+    const AddDevice(),
   ];
 
   @override

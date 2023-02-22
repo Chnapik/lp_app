@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:lp_app/screens/add_device.dart';
 import 'package:lp_app/screens/ble1_page.dart';
 import 'package:lp_app/screens/ble2_page.dart';
 
@@ -7,7 +8,7 @@ class DevicesPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final List<String> entries = <String>['BLE1', 'BLE2'];
+    final List<String> entries = <String>['BLE1', 'BLE2', 'Add Device'];
     // final List<int> colorCodes = <int>[600, 500, 100];
 
     return Scaffold(
@@ -26,6 +27,9 @@ class DevicesPage extends StatelessWidget {
               } else if (index == 1) {
                 Navigator.of(context).push(
                     MaterialPageRoute(builder: (context) => const Ble2Page()));
+              } else if (index == 2) {
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => const AddDevice()));
               }
             },
             child: Container(
