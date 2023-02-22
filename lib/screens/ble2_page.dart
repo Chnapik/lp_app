@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:lp_app/screens/app_bar.dart';
 
 class Ble2Page extends StatelessWidget {
   const Ble2Page({super.key});
@@ -7,9 +6,15 @@ class Ble2Page extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: MyAppBar(
-        appBarTitle: 'BLE2',
-        showLeading: true,
+      appBar: AppBar(
+        title: const Text('BLE2'),
+        automaticallyImplyLeading: true,
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
+        ),
       ),
       body: const Center(
         child: Text(

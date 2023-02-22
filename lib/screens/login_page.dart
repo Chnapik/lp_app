@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:lp_app/screens/app_bar.dart';
 import 'package:lp_app/screens/registration_page.dart';
 import 'package:lp_app/screens/bottom_nav_bar.dart';
 
@@ -9,9 +8,9 @@ class LoginPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: MyAppBar(
-        appBarTitle: 'Login',
-        showLeading: false,
+      appBar: AppBar(
+        title: const Text('Login'),
+        automaticallyImplyLeading: false,
       ),
       body: SafeArea(
         child: Center(

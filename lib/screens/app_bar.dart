@@ -1,8 +1,11 @@
 import 'package:flutter/material.dart';
-import 'package:lp_app/screens/settings_page.dart';
+import 'package:go_router/go_router.dart';
 
 class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
-  MyAppBar({required this.appBarTitle, required this.showLeading});
+  MyAppBar({
+    required this.appBarTitle,
+    required this.showLeading,
+  });
 
   String appBarTitle;
   bool showLeading = false;
@@ -18,8 +21,7 @@ class MyAppBar extends StatelessWidget implements PreferredSizeWidget {
             icon: const Icon(Icons.more_vert),
             color: Colors.white,
             onPressed: () {
-              Navigator.of(context).push(MaterialPageRoute(
-                  builder: (context) => const SettingsPage()));
+              context.go('/settings');
             },
           );
         }),
