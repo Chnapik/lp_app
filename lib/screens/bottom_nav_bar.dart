@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lp_app/screens/battery_health_page.dart';
+import 'package:lp_app/screens/ble1_page.dart';
+import 'package:lp_app/screens/ble2_page.dart';
 import 'package:lp_app/screens/settings_page.dart';
 import 'devices_page.dart';
 import 'home_page.dart';
@@ -21,6 +23,8 @@ class _MainRouteState extends State<BottomNavBar> {
     const BatteryHealthPage(),
     const HomePage(),
     const SettingsPage(),
+    const Ble1Page(),
+    const Ble2Page(),
   ];
 
   @override

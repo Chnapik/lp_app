@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:lp_app/screens/battery_health_page.dart';
+import 'package:lp_app/screens/ble1_page.dart';
+import 'package:lp_app/screens/ble2_page.dart';
 
 class DevicesPage extends StatelessWidget {
   const DevicesPage({Key? key}) : super(key: key);
@@ -9,7 +11,6 @@ class DevicesPage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Devices'),
-        automaticallyImplyLeading: false,
       ),
       body: Center(
         child: Builder(builder: (context) {
@@ -29,7 +30,7 @@ class DevicesPage extends StatelessWidget {
                 ),
                 onTap: () {
                   Navigator.of(context).push(MaterialPageRoute(
-                      builder: (context) => const BatteryHealthPage()));
+                      builder: (context) => const Ble1Page()));
                 },
               ),
               InkWell(
@@ -41,7 +42,7 @@ class DevicesPage extends StatelessWidget {
                 ),
                 onTap: () {
                   Navigator.of(context).push(MaterialPageRoute(
-                      builder: (context) => const BatteryHealthPage()));
+                      builder: (context) => const Ble2Page()));
                 },
               ),
               InkWell(
