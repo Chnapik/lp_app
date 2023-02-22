@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class BatteryPage extends StatelessWidget {
-  const BatteryPage({Key? key}) : super(key: key);
+class BatteryHealthPage extends StatelessWidget {
+  const BatteryHealthPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +12,7 @@ class BatteryPage extends StatelessWidget {
       ),
       body: const Center(
         child: Text(
-          'Battery Page',
+          'Battery Health Page',
           style: TextStyle(fontSize: 40.0),
         ),
       ),

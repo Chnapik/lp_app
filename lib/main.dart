@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
-import 'package:lp_app/screens/battery_page.dart';
+import 'package:lp_app/screens/battery_health_page.dart';
 import 'package:lp_app/screens/ble1_page.dart';
 import 'package:lp_app/screens/ble2_page.dart';
 import 'package:lp_app/screens/bottom_nav_bar.dart';
@@ -51,7 +51,7 @@ final _router = GoRouter(
     ),
     GoRoute(
       path: '/battery',
-      builder: (context, state) => const BatteryPage(),
+      builder: (context, state) => const BatteryHealthPage(),
     ),
     GoRoute(
       path: '/settings',
