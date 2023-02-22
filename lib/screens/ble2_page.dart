@@ -8,13 +8,6 @@ class Ble2Page extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('BLE2'),
-        automaticallyImplyLeading: true,
-        leading: IconButton(
-          icon: const Icon(Icons.arrow_back),
-          onPressed: () {
-            Navigator.of(context).pop();
-          },
-        ),
       ),
       body: const Center(
         child: Text(

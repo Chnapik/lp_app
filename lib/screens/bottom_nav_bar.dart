@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lp_app/screens/battery_page.dart';
+import 'package:lp_app/screens/settings_page.dart';
 import 'devices_page.dart';
 import 'home_page.dart';
 
@@ -19,6 +20,7 @@ class _MainRouteState extends State<BottomNavBar> {
     const DevicesPage(),
     const BatteryPage(),
     const HomePage(),
+    const SettingsPage(),
   ];
 
   @override
@@ -40,6 +42,10 @@ class _MainRouteState extends State<BottomNavBar> {
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
             label: 'Home',
+          ),
+          BottomNavigationBarItem(
+            icon: Icon(Icons.settings),
+            label: 'Settings',
           ),
         ],
         backgroundColor: Colors.blueGrey,
