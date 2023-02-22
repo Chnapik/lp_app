@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:go_router/go_router.dart';
 import 'package:lp_app/screens/battery_page.dart';
 
 class DevicesPage extends StatelessWidget {
@@ -11,14 +10,6 @@ class DevicesPage extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Devices'),
         automaticallyImplyLeading: false,
-        actions: [
-          IconButton(
-            icon: const Icon(Icons.settings),
-            onPressed: () {
-              context.go('/settings');
-            },
-          ),
-        ],
       ),
       body: Center(
         child: Builder(builder: (context) {
