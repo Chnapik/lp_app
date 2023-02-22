@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lp_app/screens/app_bar.dart';
-import 'package:lp_app/screens/bottom_nav_bar.dart';
+import 'package:go_router/go_router.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -8,8 +7,17 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: MyAppBar(
-        appBarTitle: 'Home',
+      appBar: AppBar(
+        title: const Text('Home'),
+        automaticallyImplyLeading: false,
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.settings),
+            onPressed: () {
+              context.go('/settings');
+            },
+          ),
+        ],
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,

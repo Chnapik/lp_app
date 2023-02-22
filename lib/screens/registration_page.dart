@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:lp_app/screens/app_bar.dart';
 import 'package:lp_app/screens/bottom_nav_bar.dart';
 
 class RegistrationPage extends StatelessWidget {
@@ -8,8 +7,15 @@ class RegistrationPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: MyAppBar(
-        appBarTitle: 'Register',
+      appBar: AppBar(
+        title: const Text('Registration'),
+        automaticallyImplyLeading: true,
+        leading: IconButton(
+          icon: const Icon(Icons.arrow_back),
+          onPressed: () {
+            Navigator.of(context).pop();
+          },
+        ),
       ),
       body: SafeArea(
         child: Center(

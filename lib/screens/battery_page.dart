@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lp_app/screens/app_bar.dart';
+import 'package:go_router/go_router.dart';
 
 class BatteryPage extends StatelessWidget {
   const BatteryPage({Key? key}) : super(key: key);
@@ -7,8 +7,17 @@ class BatteryPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: MyAppBar(
-        appBarTitle: 'Battery',
+      appBar: AppBar(
+        title: const Text('Battery'),
+        automaticallyImplyLeading: false,
+        actions: [
+          IconButton(
+            icon: const Icon(Icons.settings),
+            onPressed: () {
+              context.go('/settings');
+            },
+          ),
+        ],
       ),
       body: const Center(
         child: Text(
