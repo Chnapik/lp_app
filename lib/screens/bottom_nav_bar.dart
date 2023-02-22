@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:lp_app/screens/add_device.dart';
-import 'package:lp_app/screens/battery_health_page.dart';
-import 'package:lp_app/screens/ble1_page.dart';
-import 'package:lp_app/screens/ble2_page.dart';
-import 'package:lp_app/screens/settings_page.dart';
-import 'devices_page.dart';
-import 'home_page.dart';
+import 'package:lp_app/screens/battery_health.dart';
+import 'package:lp_app/screens/ble1.dart';
+import 'package:lp_app/screens/ble2.dart';
+import 'package:lp_app/screens/settings.dart';
+import 'devices.dart';
+import 'home.dart';
 
 class BottomNavBar extends StatefulWidget {
   const BottomNavBar({super.key});

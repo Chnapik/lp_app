@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lp_app/screens/registration_page.dart';
+import 'package:lp_app/screens/registration.dart';
 import 'package:lp_app/screens/bottom_nav_bar.dart';
 
 class LoginPage extends StatelessWidget {
