@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lp_app/screens/battery_page.dart';
+import 'package:lp_app/screens/battery_health_page.dart';
 import 'package:lp_app/screens/settings_page.dart';
 import 'devices_page.dart';
 import 'home_page.dart';
@@ -18,7 +18,7 @@ class _MainRouteState extends State<BottomNavBar> {
 
   final List<Widget> screens = [
     const DevicesPage(),
-    const BatteryPage(),
+    const BatteryHealthPage(),
     const HomePage(),
     const SettingsPage(),
   ];
@@ -37,7 +37,7 @@ class _MainRouteState extends State<BottomNavBar> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.battery_charging_full),
-            label: 'Battery',
+            label: 'Battery Health',
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
