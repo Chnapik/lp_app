@@ -22,26 +22,36 @@ class ChargeLevelChart extends StatelessWidget {
         title: const Text('Battery Health'),
       ),
       body: Column(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
+          const SizedBox(height: 20.0),
           Row(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: const [
-              Card(color: Colors.red, child: Text('Battery Health: 80%')),
-              Card(color: Colors.blue, child: Text('Current Charge: 80%')),
+              SizedBox(
+                height: 60.0,
+                child: Card(
+                    color: Colors.blueGrey,
+                    child: Center(
+                      child: Text(
+                        'Battery Health: \n80%',
+                        style: TextStyle(fontSize: 22.0, color: Colors.white),
+                      ),
+                    )),
+              ),
+              SizedBox(
+                height: 60.0,
+                child: Card(
+                    color: Colors.blueGrey,
+                    child: Center(
+                      child: Text(
+                        'Current Charge: \n80%',
+                        style: TextStyle(fontSize: 22.0, color: Colors.white),
+                      ),
+                    )),
+              ),
             ],
           ),
-          // const SizedBox(height: 40.0),
-          // const Padding(
-          //   padding: EdgeInsets.all(10.0),
-          //   child: Text(
-          //     'Battery Health: 80%',
-          //     textAlign: TextAlign.center,
-          //     style: TextStyle(
-          //       fontWeight: FontWeight.bold,
-          //       fontSize: 30.0,
-          //     ),
-          //   ),
-          // ),
           Expanded(
             child: SfCartesianChart(
               title: ChartTitle(text: 'Charge Level History'),
