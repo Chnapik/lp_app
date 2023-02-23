@@ -10,7 +10,6 @@ class ChartData {
 class ChargeLevelChart extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final _currentIndex = 0;
     final List<int> chargeLevels = [80, 60, 50, 30, 90, 75, 40, 65, 85];
 
     final List<ChartData> data = List.generate(
@@ -22,9 +21,28 @@ class ChargeLevelChart extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Battery Health'),
       ),
-      body: Stack(
+      body: Column(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: [
-          Positioned(
+          Row(
+            children: const [
+              Card(color: Colors.red, child: Text('Battery Health: 80%')),
+              Card(color: Colors.blue, child: Text('Current Charge: 80%')),
+            ],
+          ),
+          // const SizedBox(height: 40.0),
+          // const Padding(
+          //   padding: EdgeInsets.all(10.0),
+          //   child: Text(
+          //     'Battery Health: 80%',
+          //     textAlign: TextAlign.center,
+          //     style: TextStyle(
+          //       fontWeight: FontWeight.bold,
+          //       fontSize: 30.0,
+          //     ),
+          //   ),
+          // ),
+          Expanded(
             child: SfCartesianChart(
               title: ChartTitle(text: 'Charge Level History'),
               primaryXAxis: NumericAxis(),
