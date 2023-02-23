@@ -10,7 +10,7 @@ class ChartData {
 class ChargeLevelChart extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    final List<int> chargeLevels = [80, 60, 90, 75, 40, 65, 85];
+    final List<int> chargeLevels = [80, 60, 50, 30, 90, 75, 40, 65, 85];
 
     final List<ChartData> data = List.generate(
       chargeLevels.length,
@@ -24,6 +24,7 @@ class ChargeLevelChart extends StatelessWidget {
       body: SafeArea(
         child: Center(
           child: SfCartesianChart(
+            title: ChartTitle(text: 'Charge Level History'),
             primaryXAxis: NumericAxis(),
             primaryYAxis: NumericAxis(),
             series: <LineSeries<ChartData, int>>[
