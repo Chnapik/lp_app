@@ -21,7 +21,7 @@ class _MainRouteState extends State<BottomNavBar> {
 
   final List<Widget> screens = [
     const DevicesPage(),
-    const BatteryHealthPage(),
+    ChargeLevelChart(),
     const HomePage(),
     const SettingsPage(),
     const Ble1Page(),
