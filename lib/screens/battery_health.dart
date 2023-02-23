@@ -1,8 +1,13 @@
 import 'package:flutter/material.dart';
 
-class BatteryHealthPage extends StatelessWidget {
+class BatteryHealthPage extends StatefulWidget {
   const BatteryHealthPage({Key? key}) : super(key: key);
 
+  @override
+  State<BatteryHealthPage> createState() => _BatteryHealthPageState();
+}
+
+class _BatteryHealthPageState extends State<BatteryHealthPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
