@@ -16,7 +16,7 @@ class DevicesPage extends StatelessWidget {
         children: [
           const SizedBox(height: 20.0),
           Padding(
-            padding: EdgeInsets.all(12.0),
+            padding: const EdgeInsets.all(12.0),
             child: GestureDetector(
               onTap: () {
                 Navigator.of(context).push(
@@ -35,13 +35,13 @@ class DevicesPage extends StatelessWidget {
                       padding: const EdgeInsets.all(20.0),
                       child: Row(
                         children: const [
-                          Icon(Icons.phone_android,
-                              size: 40.0, color: Colors.white),
+                          Icon(Icons.phone_iphone,
+                              size: 30.0, color: Colors.white),
                           SizedBox(width: 20.0),
                           Text(
                             'BLE1',
                             style:
-                                TextStyle(fontSize: 40.0, color: Colors.white),
+                                TextStyle(fontSize: 30.0, color: Colors.white),
                           ),
                         ],
                       ),
@@ -52,7 +52,7 @@ class DevicesPage extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: EdgeInsets.all(12.0),
+            padding: const EdgeInsets.all(12.0),
             child: GestureDetector(
               onTap: () {
                 Navigator.of(context).push(
@@ -72,12 +72,12 @@ class DevicesPage extends StatelessWidget {
                       child: Row(
                         children: const [
                           Icon(Icons.laptop_mac,
-                              size: 40.0, color: Colors.white),
+                              size: 30.0, color: Colors.white),
                           SizedBox(width: 20.0),
                           Text(
                             'BLE2',
                             style:
-                                TextStyle(fontSize: 40.0, color: Colors.white),
+                                TextStyle(fontSize: 30.0, color: Colors.white),
                           ),
                         ],
                       ),
@@ -88,7 +88,7 @@ class DevicesPage extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: EdgeInsets.all(12.0),
+            padding: const EdgeInsets.all(12.0),
             child: GestureDetector(
               onTap: () {
                 Navigator.of(context).push(
@@ -108,12 +108,12 @@ class DevicesPage extends StatelessWidget {
                       child: Row(
                         children: const [
                           Icon(Icons.bluetooth,
-                              size: 40.0, color: Colors.white),
+                              size: 30.0, color: Colors.white),
                           SizedBox(width: 20.0),
                           Text(
                             'Add Device',
                             style:
-                                TextStyle(fontSize: 40.0, color: Colors.white),
+                                TextStyle(fontSize: 30.0, color: Colors.white),
                           ),
                         ],
                       ),
