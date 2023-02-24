@@ -14,8 +14,9 @@ class DevicesPage extends StatelessWidget {
       ),
       body: ListView(
         children: [
+          const SizedBox(height: 20.0),
           Padding(
-            padding: EdgeInsets.all(8.0),
+            padding: EdgeInsets.all(12.0),
             child: GestureDetector(
               onTap: () {
                 Navigator.of(context).push(
@@ -30,14 +31,20 @@ class DevicesPage extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Row(
-                      children: const [
-                        Icon(Icons.bluetooth, size: 40.0, color: Colors.white),
-                        Text(
-                          'BLE1',
-                          style: TextStyle(fontSize: 40.0, color: Colors.white),
-                        ),
-                      ],
+                    Padding(
+                      padding: const EdgeInsets.all(20.0),
+                      child: Row(
+                        children: const [
+                          Icon(Icons.phone_android,
+                              size: 40.0, color: Colors.white),
+                          SizedBox(width: 20.0),
+                          Text(
+                            'BLE1',
+                            style:
+                                TextStyle(fontSize: 40.0, color: Colors.white),
+                          ),
+                        ],
+                      ),
                     ),
                   ],
                 ),
@@ -45,7 +52,7 @@ class DevicesPage extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: EdgeInsets.all(8.0),
+            padding: EdgeInsets.all(12.0),
             child: GestureDetector(
               onTap: () {
                 Navigator.of(context).push(
@@ -60,14 +67,20 @@ class DevicesPage extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Row(
-                      children: const [
-                        Icon(Icons.bluetooth, size: 40.0, color: Colors.white),
-                        Text(
-                          'BLE2',
-                          style: TextStyle(fontSize: 40.0, color: Colors.white),
-                        ),
-                      ],
+                    Padding(
+                      padding: const EdgeInsets.all(20.0),
+                      child: Row(
+                        children: const [
+                          Icon(Icons.laptop_mac,
+                              size: 40.0, color: Colors.white),
+                          SizedBox(width: 20.0),
+                          Text(
+                            'BLE2',
+                            style:
+                                TextStyle(fontSize: 40.0, color: Colors.white),
+                          ),
+                        ],
+                      ),
                     ),
                   ],
                 ),
@@ -75,7 +88,7 @@ class DevicesPage extends StatelessWidget {
             ),
           ),
           Padding(
-            padding: EdgeInsets.all(8.0),
+            padding: EdgeInsets.all(12.0),
             child: GestureDetector(
               onTap: () {
                 Navigator.of(context).push(
@@ -90,14 +103,20 @@ class DevicesPage extends StatelessWidget {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Row(
-                      children: const [
-                        Icon(Icons.bluetooth, size: 40.0, color: Colors.white),
-                        Text(
-                          'Add Device',
-                          style: TextStyle(fontSize: 40.0, color: Colors.white),
-                        ),
-                      ],
+                    Padding(
+                      padding: const EdgeInsets.all(20.0),
+                      child: Row(
+                        children: const [
+                          Icon(Icons.bluetooth,
+                              size: 40.0, color: Colors.white),
+                          SizedBox(width: 20.0),
+                          Text(
+                            'Add Device',
+                            style:
+                                TextStyle(fontSize: 40.0, color: Colors.white),
+                          ),
+                        ],
+                      ),
                     ),
                   ],
                 ),
@@ -106,6 +125,13 @@ class DevicesPage extends StatelessWidget {
           ),
         ],
       ),
+
+      // final List<String> entries = <String>[
+      //   'BLE1',
+      //   'BLE2',
+      //   'Add Device',
+      // ];
+      // final List<int> colorCodes = <int>[600, 500, 100];
 
       // body: Container(
       //   child: Card(
