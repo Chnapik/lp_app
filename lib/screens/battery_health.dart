@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:lp_app/screens/add_device.dart';
+import 'package:lp_app/screens/ble1.dart';
+import 'package:lp_app/screens/ble2.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 
 class ChartData {
@@ -21,38 +24,83 @@ class ChargeLevelChart extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Battery Health'),
       ),
-      body: Column(
+      body: ListView(
         children: [
           const SizedBox(height: 20.0),
-          Row(
-            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-            crossAxisAlignment: CrossAxisAlignment.center,
-            children: const [
-              SizedBox(
-                height: 60.0,
-                child: Card(
-                    color: Colors.blueGrey,
-                    child: Center(
-                      child: Text(
-                        'Battery Health: \n80%',
-                        style: TextStyle(fontSize: 22.0, color: Colors.white),
+          Padding(
+            padding: const EdgeInsets.all(12.0),
+            child: GestureDetector(
+              onTap: () {
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => const Ble1Page()));
+              },
+              child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(15.0),
+                  color: Colors.blueGrey,
+                ),
+                height: 100.0,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(20.0),
+                      child: Row(
+                        children: const [
+                          Icon(Icons.charging_station_rounded,
+                              size: 30.0, color: Colors.white),
+                          SizedBox(width: 20.0),
+                          Text(
+                            'Charge Level: 80%',
+                            style:
+                                TextStyle(fontSize: 28.0, color: Colors.white),
+                          ),
+                        ],
                       ),
-                    )),
+                    ),
+                  ],
+                ),
               ),
-              SizedBox(
-                height: 60.0,
-                child: Card(
-                    color: Colors.blueGrey,
-                    child: Center(
-                      child: Text(
-                        'Current Charge: \n80%',
-                        style: TextStyle(fontSize: 22.0, color: Colors.white),
-                      ),
-                    )),
-              ),
-            ],
+            ),
           ),
-          Expanded(
+          Padding(
+            padding: const EdgeInsets.all(12.0),
+            child: GestureDetector(
+              onTap: () {
+                Navigator.of(context).push(
+                    MaterialPageRoute(builder: (context) => const Ble2Page()));
+              },
+              child: Container(
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(15.0),
+                  color: Colors.blueGrey,
+                ),
+                height: 100.0,
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.all(20.0),
+                      child: Row(
+                        children: const [
+                          Icon(Icons.battery_charging_full,
+                              size: 30.0, color: Colors.white),
+                          SizedBox(width: 20.0),
+                          Text(
+                            'Battery Health: 90%',
+                            style:
+                                TextStyle(fontSize: 28.0, color: Colors.white),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(12.0),
             child: SfCartesianChart(
               title: ChartTitle(text: 'Charge Level History'),
               primaryXAxis: NumericAxis(),
