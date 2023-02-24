@@ -42,8 +42,10 @@ class DevicesPage extends StatelessWidget {
                           SizedBox(width: 20.0),
                           Text(
                             'BLE1',
-                            style:
-                                TextStyle(fontSize: 30.0, color: Colors.white),
+                            style: TextStyle(
+                              fontSize: 30.0,
+                              color: Colors.white,
+                            ),
                           ),
                         ],
                       ),

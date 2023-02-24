@@ -29,73 +29,59 @@ class ChargeLevelChart extends StatelessWidget {
           const SizedBox(height: 20.0),
           Padding(
             padding: const EdgeInsets.all(12.0),
-            child: GestureDetector(
-              onTap: () {
-                Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => const Ble1Page()));
-              },
-              child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(15.0),
-                  color: Colors.blueGrey,
-                ),
-                height: 100.0,
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.all(20.0),
-                      child: Row(
-                        children: const [
-                          Icon(Icons.charging_station_rounded,
-                              size: 30.0, color: Colors.white),
-                          SizedBox(width: 20.0),
-                          Text(
-                            'Charge Level: 80%',
-                            style:
-                                TextStyle(fontSize: 28.0, color: Colors.white),
-                          ),
-                        ],
-                      ),
+            child: Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(15.0),
+                color: Colors.blueGrey,
+              ),
+              height: 100.0,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(20.0),
+                    child: Row(
+                      children: const [
+                        Icon(Icons.charging_station_rounded,
+                            size: 30.0, color: Colors.white),
+                        SizedBox(width: 20.0),
+                        Text(
+                          'Charge Level: 80%',
+                          style: TextStyle(fontSize: 28.0, color: Colors.white),
+                        ),
+                      ],
                     ),
-                  ],
-                ),
+                  ),
+                ],
               ),
             ),
           ),
           Padding(
             padding: const EdgeInsets.all(12.0),
-            child: GestureDetector(
-              onTap: () {
-                Navigator.of(context).push(
-                    MaterialPageRoute(builder: (context) => const Ble2Page()));
-              },
-              child: Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(15.0),
-                  color: Colors.blueGrey,
-                ),
-                height: 100.0,
-                child: Column(
-                  mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.all(20.0),
-                      child: Row(
-                        children: const [
-                          Icon(Icons.battery_charging_full,
-                              size: 30.0, color: Colors.white),
-                          SizedBox(width: 20.0),
-                          Text(
-                            'Battery Health: 90%',
-                            style:
-                                TextStyle(fontSize: 28.0, color: Colors.white),
-                          ),
-                        ],
-                      ),
+            child: Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(15.0),
+                color: Colors.blueGrey,
+              ),
+              height: 100.0,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(20.0),
+                    child: Row(
+                      children: const [
+                        Icon(Icons.battery_charging_full,
+                            size: 30.0, color: Colors.white),
+                        SizedBox(width: 20.0),
+                        Text(
+                          'Battery Health: 90%',
+                          style: TextStyle(fontSize: 28.0, color: Colors.white),
+                        ),
+                      ],
                     ),
-                  ],
-                ),
+                  ),
+                ],
               ),
             ),
           ),
