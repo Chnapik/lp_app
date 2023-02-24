@@ -10,7 +10,9 @@ class DevicesPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Devices'),
+        title: const Text(
+          'Devices',
+        ),
       ),
       body: ListView(
         children: [
