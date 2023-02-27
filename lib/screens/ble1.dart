@@ -118,12 +118,6 @@ class Ble1Page extends StatelessWidget {
           ),
         ],
       ),
-      // body: const Center(
-      //   child: Text(
-      //     'BLE1 Page',
-      //     style: TextStyle(fontSize: 40.0),
-      //   ),
-      // ),
     );
   }
 }
