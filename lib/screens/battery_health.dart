@@ -1,16 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:lp_app/screens/add_device.dart';
-import 'package:lp_app/screens/ble1.dart';
-import 'package:lp_app/screens/ble2.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 
-class ChartData {
-  ChartData(this.x, this.y);
-  final int x;
-  final int y;
-}
-
-class ChargeLevelChart extends StatelessWidget {
+class BatteryPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final List<int> chargeLevels = [80, 60, 50, 30, 90, 75, 40, 65, 85];
@@ -104,4 +95,10 @@ class ChargeLevelChart extends StatelessWidget {
       ),
     );
   }
+}
+
+class ChartData {
+  ChartData(this.x, this.y);
+  final int x;
+  final int y;
 }
