@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:lp_app/screens/add_device.dart';
-import 'package:lp_app/screens/ble1.dart';
-import 'package:lp_app/screens/ble2.dart';
+import 'package:lp_app/presentation/screens/add_device.dart';
+import 'package:lp_app/presentation/screens/ble1.dart';
+import 'package:lp_app/presentation/screens/ble2.dart';
 
 class DevicesPage extends StatelessWidget {
   const DevicesPage({Key? key}) : super(key: key);

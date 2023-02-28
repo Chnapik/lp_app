@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lp_app/screens/bottom_nav_bar.dart';
+import 'package:lp_app/presentation/screens/bottom_nav_bar.dart';
 
 void main() {
   runApp(const MyApp());

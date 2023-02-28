@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:lp_app/screens/registration.dart';
-import 'package:lp_app/screens/bottom_nav_bar.dart';
+import 'package:lp_app/presentation/screens/registration.dart';
+import 'package:lp_app/presentation/screens/bottom_nav_bar.dart';
 
 class LoginPage extends StatelessWidget {
   const LoginPage({super.key});

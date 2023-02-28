@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:lp_app/screens/add_device.dart';
-import 'package:lp_app/screens/battery_health.dart';
-import 'package:lp_app/screens/ble1.dart';
-import 'package:lp_app/screens/ble2.dart';
-import 'package:lp_app/screens/settings.dart';
+import 'package:lp_app/presentation/screens/add_device.dart';
+import 'package:lp_app/presentation/screens/battery_health.dart';
+import 'package:lp_app/presentation/screens/ble1.dart';
+import 'package:lp_app/presentation/screens/ble2.dart';
+import 'package:lp_app/presentation/screens/settings.dart';
 import 'devices.dart';
 import 'home.dart';
 
